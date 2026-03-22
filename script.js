@@ -8,7 +8,7 @@ function updateStyle() {
     titleElement.style.color = "lime";
     titleElement.style.fontSize = "50px";
     titleElement.style.backgroundColor = "black";
-    titleElement.innerHTML = "LAB OVERHAULED";
+    titleElement.innerHTML = "boo :3";
 }
 
 function handleInput() {
