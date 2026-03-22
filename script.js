@@ -1,7 +1,7 @@
 const titleElement = document.getElementById("mainTitle");
 
 function greet() {
-    alert("You actually clicked it. Hello.");
+    alert("you.. you actually clicked on me.. WAIT GO AWYA IM A MINOR!!");
 }
 
 function updateStyle() {
