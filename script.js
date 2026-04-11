@@ -1,4 +1,10 @@
 const titleElement = document.getElementById("mainTitle");
+let wastedSeconds = 0;
+
+setInterval(() => {
+    wastedSeconds++;
+    console.log("you wasted about, lets say " + wastedSeconds + "seconds!");
+}, 1000);
 
 function greet() {
     alert("you.. you actually clicked on me.. WAIT GO AWYA IM A MINOR!!");
@@ -19,8 +25,14 @@ function handleInput() {
         display.innerHTML = "I said TYPE SOMETHING. It's empty.";
         display.style.color = "red";
     } else {
-        display.innerHTML = "Your soul '" + input + "' has been sent. Goodbye.";
-        display.style.color = "blue";
+        // Requirement: setTimeout - Fakes a "loading" state before sending the soul
+        display.innerHTML = "Sending message to the moon or sum";
+        display.style.color = "orange";
+
+        setTimeout(() => {
+            display.innerHTML = "Your soul '" + input + "' has been sent. Goodbye.";
+            display.style.color = "blue";
+        }, 1500);
     }
 }
 
@@ -29,5 +41,5 @@ function runLoop() {
     for (let i = 0; i < 10; i++) {
         console.log("el temper di yo " + i);
     }
-    alert("Check the console (F12) if you care.");
+    alert("check console gng");
 }
